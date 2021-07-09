@@ -1,90 +1,128 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Progate</title>
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-</head>
-<body>
-  <header>
-    <div class="container">
-      <div class="header-left">
-        <img class="logo" src="https://prog-8.com/images/html/advanced/main_logo.png">
-      </div>
-      <span class="fa fa-bars menu-icon"></span>
-      <div class="header-right">
-        <a href="#">レッスン</a>
-        <a href="#">新規登録</a>
-        <a href="#" class="login">ログイン</a>
-      </div>
-    </div>
-  </header>
-  <div class="top-wrapper">
-    <div class="container">
-      <h1>LEARN TO CODE.<br>LEARN TO BE CREATIVE.</h1>
-      <p>Progateはオンラインプログラミング学習サービスです。<br>初心者にもやさしいスライドとレッスンで、ウェブサービスを作りながらプログラミングを学んでいきましょう。</p>
-      <div class="btn-wrapper">
-        <a href="#" class="btn signup">新規登録はこちら</a>
-        <p>or</p>
-        <a href="#" class="btn facebook"><span class="fa fa-facebook"></span>Facebookで登録</a>
-        <a href="#" class="btn twitter"><span class="fa fa-twitter"></span>Twitterで登録</a>
-      </div>
-    </div>
-  </div>
-  <div class="lesson-wrapper">
-    <div class="container">
-      <div class="heading">
-        <h2>Learn Where to Get Started!</h2>
-      </div>
-      <div class="lessons">
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/html.png">
-            <p>HTML & CSS</p>
-          </div>
-          <p class="text-contents">ウェブページの作成に使用される言語です。HTMLとCSSを組み合わせることで、静的なページを作り上げることができます。</p>
+<html lang="ja">
+  
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <title>Kouhei Sato's Portfolio</title>
+  </head>
+
+
+
+
+
+  <body>
+      <header>
+        <div class="headercontainer">
+          <h1 class="head1">Kouhei<br>Sato's<br>Portfolio</h1>
+          <h1 class="head2">Kouhei Sato's<br>Portfolio</h1>
+          <h1 class="head3">Kouhei Sato's  Portfolio</h1>
+          
+          <!-- <p>IT Engineer</p> -->
         </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/jQuery.png">
-            <p>jQuery</p>
+      </header>
+
+
+      <nav class="nav1">
+        <ul>
+          <li><a href="#profile"><i class="fas fa-user"></i>Profile</a></li>
+          <li><a href="#skill"><i class="fas fa-cog fa-spin"></i>Skill</a></li>
+          <li><a href="#works"><i class="fas fa-robot"></i>Works</a></li>
+          <li><a href="#contact"><i class="fas fa-paper-plane"></i>Contact</a></li>
+        </ul>
+      </nav>
+
+
+      <main id="contents">
+
+
+
+        <section id="profile">
+          <h1><i class="fas fa-user "></i> Profile</h1>
+            <div  class="container">
+              <div class="logo">
+                <img src="" alt="自己紹介画像です">
+              </div>
+              <div class="profile">
+                <p>・名前 ：佐藤  航平</p>
+                <p>・出身 ：神奈川県</p>
+                <p>・自己紹介  ： 初めまして。佐藤 航平と申します<br>ITエンジニアを目指して、独学でプログラミングを勉強中です。将来はセキュリティ関連の仕事を幅広くしてみたいので そのためにフルスタックのように幅広く色々経験を積みたいです</p>
+              </div>
+              <!-- <ul class="profile">
+                <li>名前 ：佐藤  航平</li>
+                <li>出身 ：神奈川県</li>
+                <li>自己紹介  ： 初めまして　佐藤　航平と申します</li>
+              </ul> -->
+            </div>
+        </section>
+
+
+        <section class=""  id="skill">
+            <h1><i class="fas fa-cog fa-spin"></i> Skill</h1>
+            <div class="table">
+              <table class="table1">
+                <tbody>
+                <tr><td  class="th" colspan="2">独学中のスキル</td></tr>
+                  <tr><td>HTML</td><td>PHP</td></tr>
+                  <tr><td>CSS</td><td>Ruby</td></tr>
+                  <tr><td>JavaScript</td><td>MySQL</td></tr>
+                </tbody>
+              </table>
+  
+              <table class="table2">
+                <tbody>
+                  <tr><td class="th"><i class="fas fa-address-card"></i> 保有資格</td></tr>
+                  <tr><td>基本情報技術者</td></tr>
+                  <tr><td>LinuC Level１</td></tr>
+                  <tr><td>LinuC Level2</td></tr>
+                  <tr><td>情報処理安全確保支援士<br>（＊現在勉強中）</td></tr>
+                  <tr><td>AWSクラウドプラクティショナー<br>（＊現在勉強中）</td></tr>
+                </tbody>
+              </table>
+            </div>
+        </section>
+
+
+        <section class="" id="works">
+          <div  class="linker">
+            <h1><i class="fas fa-robot"></i> Works</h1>
+            <p>説明</p>
+            <div class="works">
+              <div class="work1">              
+                <p><a href="">git hub</a></p>
+              </div>
+              <div class="work1">              
+                <p><a href="">git hub</a></p>
+              </div>
+              <!-- <div class="work1">              
+                <p><a href="">git hub</a></p>
+              </div> -->
+            </div>
           </div>
-          <p class="text-contents">素敵な動きを手軽に実装できるJavaScriptライブラリです。 アニメーション効果をつけたり、Ajax（エイジャックス）を使って外部ファイルを読み込んだりと色々なことができます。</p>
-        </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/ruby.png">
-            <p>Ruby</p>
+        </section>
+
+        <section class="" id="contact" >
+          <div>
+            <h1><i class="fas fa-paper-plane"></i> Contact</h1>
+            <a href="https://forms.gle/YNM6F2g7Jpw7Zf9fA"><img src="" alt="画像です"><p>お問い合わせ</p></a>
           </div>
-          <p class="text-contents">オープンソースの動的なプログラミング言語で、 シンプルさと高い生産性を備えています。大きなWebアプリケーションから小さな日用ツールまで、さまざまなソフトウェアを作ることができます。</p>
-        </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/php.png">
-            <p>PHP</p>
-          </div>
-          <p class="text-contents">HTMLだけではページの内容を変えることはできません。PHPはHTMLにプログラムを埋め込み、それを可能にします。</p>
-        </div>
-      </div>
-      <div class="clear"></div>
-    </div>
-  </div>
-  <div class="message-wrapper">
-    <div class="container">
-      <div class="heading">
-        <h2>さぁ、あなたもProgateでプログラミングを学んでみませんか?</h2>
-        <h3>Let's learn to code, learn to be creative!</h3>
-      </div>
-      <span class="btn message">さっそく開発する</span>
-    </div>
-  </div>
-  <footer>
-    <div class="container">
-      <img src="https://prog-8.com/images/html/advanced/footer_logo.png">
-      <p>Learn to Code, Learn to be Creative.</p>
-    </div>
-  </footer>
-</body>
+        </section>
+
+      </main>
+      <footer>
+        <nav class="nav2">
+          <ul>
+            <li><a href="#profile">  Profile</a></li>
+            <li><a href="#skill">  Skill</a></li>
+            <li><a href="#works"> Works</a></li>
+            <li><a href="#contact">  Contact</a></li>
+          </ul>
+        </nav>
+        <p>Copyright©️Sato Kouhei. All Right Reserved.  </p>
+      </footer>
+  </body>
 </html>
