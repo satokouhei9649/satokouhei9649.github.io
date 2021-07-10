@@ -87,14 +87,29 @@
         </section>
 
 
-        <section class="" id="works">
-          <div  class="linker">
+        <section id="works">
+          <div>
             <h1><i class="fas fa-robot"></i> Works</h1>
             <p>説明</p>
-            <div class="works">
-              <div class="work1">              
+            <div id="portfolio">
+              <div class="work1" id="mysite">
+                <img src="">              
                 <p><a href="">git hub</a></p>
               </div>
+              <!-- モーダル -->
+              <div id="mask" class="hidden"></div>
+              <div id="show" class="hidden">
+                <figure id="modal">
+                  <img src="">
+                  <figcaption>
+                    <p>自分のポートフォリオサイトです</p>
+                    <p>HTML/CSS/JavaScript</p>
+                  </figcaption>
+                  <button id="btn">閉じる</button>
+                </figure>
+              </div>
+
+
               <div class="work1">              
                 <p><a href="">git hub</a></p>
               </div>
@@ -124,5 +139,7 @@
         </nav>
         <p>Copyright©️Sato Kouhei. All Right Reserved.  </p>
       </footer>
+
+     <script src="js/main.js"></script>
   </body>
 </html>

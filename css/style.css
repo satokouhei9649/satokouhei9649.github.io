@@ -127,10 +127,11 @@ header h1 {
    }
 
    /* worksのcss */
-  .works {
+   #portfolio {
     display: flex;
     justify-content: space-around;
-  }
+   }
+  
   .works a{
     text-decoration: none;
     font-size: 16px;
@@ -143,6 +144,39 @@ header h1 {
     height: 200px; 
     width: 150px;
   }
+
+  /* モーダルのCSS */
+  #show {
+    color: white;
+    background: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+  #mask {
+    background: rgba(80, 80, 80, 0.342);
+  }
+  #modal {
+    height: 200px;
+    padding: 30px ;
+    padding-top: 200px;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+  }
+  #show > figure > button {
+    width: 50%;
+    height: 32px;
+    border-radius: 50%;
+  }
+  .hidden {
+    display: none;
+  }
+
 
    /* お問い合わせのcss */
    #contact p {
@@ -362,8 +396,7 @@ header h1 {
     padding-bottom: 40px;
   }
   /* footerのcss */
-  footer  {
-  }
+
   footer p {
     padding: 20px 0;
   }
