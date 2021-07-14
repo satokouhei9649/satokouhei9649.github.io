@@ -1,8 +1,9 @@
 /* CSS Dcoument */
-/* common */
+
 /* smallscreen */
 body {
   margin: 0;
+  text-align: center;
 }
 a {
   text-decoration: none;
@@ -11,24 +12,57 @@ a {
   display: none;
 }
 /* ヘッダーのcss */
-header {
-  text-align: center;
+.bg {
+  position: relative;
+  height: 250px;
+}
+.bg .header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  animation: screen 5s infinite;
+}
+.bg1 {
   background-image: url(../img/bicycle-1872682_1920.jpg);
   background-size: cover;
-  height: 200px;
+  z-index: 3;
 }
+.bg2 {
+  background-image: url(../img/books-1163695_1920.jpg);
+  background-size: cover;
+  /* animation: screen 5s infinite; */
+  z-index: 2;
+}
+
+@keyframes screen {
+  0% {
+    opacity: 1.0;
+  }
+  100% {
+    opacity: 0;
+  }
+  
+}
+
 .headercontainer {
   padding: 80px;
   padding-top: 5px;
 }
-header h1 {
+.head1 {
   font-family: "Anton", sans-serif;
-  line-height: 45px;
   color: rgb(255, 255, 255);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: inline-block;
+  z-index: 6;
+  line-height: 45px;
   font-size: 40px;
-  margin-top: 30px;
   letter-spacing: 3px;
-  /* opacity: 0.9; */
   }
   header p {
     color: white;
@@ -86,10 +120,6 @@ header h1 {
     font-weight: 10;
     font-size: 15px;
   }
-  /* .container div {
-    background-color: #fff;
-    border-radius: 10px;
-  } */
   .container {
     display: flex;
     justify-content: space-between;
@@ -204,7 +234,6 @@ header h1 {
   
   .nav2 li {
     font-size: 12px;
-    /* margin-right: 80px; */
   }
 
 
@@ -217,17 +246,22 @@ header h1 {
       display: none;
     }
     .head2 {
-      display: block;
-    }
-    header {
-      height: 350px;
-    }
-    
-    header h1 {
+      font-family: "Anton", sans-serif;
+      color: rgb(255, 255, 255);
       font-size: 74px;
       line-height: 90px;
       margin-top: 80px;
-      }
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: inline-block;
+      z-index: 6;
+    }
+    .bg {
+      height: 350px;
+    }
     
     /* navのcss */
     nav {
@@ -324,21 +358,30 @@ header h1 {
     display: none;
   }
   .head3 {
-    display: block;
+    font-family: "Anton", sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 74px;
+    line-height: 90px;
+    margin-top: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: inline-block;
+    z-index: 6;
+    line-height: 90px;
+    font-size: 88px;
+    margin-top: 150px;
   }
 
-  header {
+  .bg {
     height: 500px;
   }
   .headercontainer {
     padding: 80px;
     padding-top: 5px;
   }
-  header h1 {
-    line-height: 90px;
-    font-size: 88px;
-    margin-top: 150px;
-    }
   
   /* navのcss */
 
