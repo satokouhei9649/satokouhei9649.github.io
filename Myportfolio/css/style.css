@@ -1,0 +1,485 @@
+/* CSS Dcoument */
+
+/* smallscreen */
+body {
+  margin: 0;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+}
+.head2,.head3{
+  display: none;
+}
+/* ヘッダーのcss */
+.bg {
+  position: relative;
+  height: 250px;
+}
+.bg .header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  
+}
+.bg1 {
+  background-image: url(../img/bicycle-1872682_1920.jpg);
+  background-size: cover;
+  z-index: 4;
+  animation: screen 12s infinite;
+}
+.bg2 {
+  background-image: url(../img/books-1163695_1920.jpg);
+  background-size: cover;
+  animation: screen 12s infinite 3s;
+  z-index: 3;
+}
+.bg3 {
+  background-image: url(../img/camera-1130731_1920.jpg);
+  background-size: cover;
+  animation: screen 12s infinite 6s;
+  z-index: 2;
+}
+.bg4 {
+  background-image: url(../img/printing-plate-846089_1920.jpg);
+  background-size: cover;
+  animation: screen 12s infinite 9s;
+}
+
+@keyframes screen {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  26% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+  
+}
+
+.headercontainer {
+  padding: 80px;
+  padding-top: 5px;
+}
+.head1 {
+  font-family: "Anton", sans-serif;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: inline-block;
+  z-index: 6;
+  line-height: 60px;
+  font-size: 50px;
+  letter-spacing: 3px;
+  }
+  header p {
+    color: white;
+    font-size: 20px;
+  }
+
+  /* navのcss */
+  nav {
+    display: flex;
+    justify-content: center;
+   background: rgb(94, 94, 94);
+   height: 45px;
+  }
+   nav ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    padding: 10px;
+    list-style: none;
+    float: left;
+    font-size: 16px;
+    color:white;
+    font-family: "Anton", sans-serif;
+  }
+  nav a {
+    color:white;
+    letter-spacing: 3px;
+  }
+  .fas {
+    margin-right: 3px;
+  }
+
+  /*自己紹介のcss */
+  
+  #contents {
+    text-align: center;
+    font-size: 18px;
+    background-color: rgba(230, 230, 230, 0.788);
+    padding-top: 1px;
+  }
+  #contents h1 {
+    font-family: "Anton", sans-serif;
+    font-size: 30px;
+    letter-spacing: 3px;
+    margin: 10px 0;
+  }
+  .profile {
+    margin: auto;
+    width: 50%;
+  }
+  .profile p {
+    text-align: left;
+    font-weight: 10;
+    font-size: 15px;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .logo {
+    margin: auto;
+  }
+  .logo img{
+    display: block;
+    background:#fff;
+    border: 1px solid #fff;;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+/* スキルのCSS */
+  table {
+    font-weight: bold;
+    border-radius: 10px;
+    margin: auto;
+    border: 1px solid rgba(224, 224, 224, 0.342);
+    background-color: #fff;
+    margin-bottom: 50px;
+  }
+  .table1 td {
+    width: 200px;
+    height: 30px;
+  }
+   .table2 td {
+     width: 400px;
+     height: 40px;
+   }
+   .th {
+      font-size: 24px;
+   }
+
+   /* worksのcss */
+   #work {
+    z-index: 0;
+   }
+   #portfolio {
+    display: flex;
+    justify-content: space-around;
+   }
+  
+  .works a{
+    text-decoration: none;
+    font-size: 16px;
+  } 
+  #works p {
+    margin-bottom: 20px; 
+  }
+  .works {
+    border: 1px solid blueviolet;
+    height: 200px; 
+    width: 30%;
+  }
+
+  /* モーダルのCSS */
+  #mask {
+    background: rgba(80, 80, 80, 0.342);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+  #modal {
+    color: white;
+    background: rgba(0, 0, 0, 0.4);
+    height: 200px;
+    position: fixed;
+    top: 100px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 50%;
+    padding: 24px 48px;
+    padding-top:100px;
+    z-index: 2;
+  }
+  #show > figure > button {
+    width: 50%;
+    height: 32px;
+    border-radius: 50%;
+  }
+  .hidden {
+    display: none;
+  }
+
+
+   /* お問い合わせのcss */
+   #contact p {
+    margin: 0;
+    padding: 30px 0;
+    
+  }
+  
+  /* footerのcss */
+  footer  {
+    /* height: px; */
+    text-align: center;
+    font-size: 6px;
+    color: #fff;
+    background: rgb(94, 94, 94);
+    padding-bottom: 30px;
+  }
+  footer p {
+    padding: 5px 0;
+  }
+  
+  .nav2 li {
+    font-size: 18px;
+  }
+
+
+
+  /* tabletのcss */
+
+
+  @media(min-width: 600px) {
+    .head1 {
+      display: none;
+    }
+    .head2 {
+      font-family: "Anton", sans-serif;
+      color: rgb(255, 255, 255);
+      font-size: 74px;
+      line-height: 90px;
+      margin-top: 80px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: inline-block;
+      z-index: 6;
+    }
+    .bg {
+      height: 350px;
+    }
+    
+    /* navのcss */
+    nav {
+      height: auto;
+    }
+    .nav1 li {
+      margin-right: 10px;
+      font-size: 24px;
+    }
+    
+    /*自己紹介のcss */
+    
+    #contents {
+      font-size: 24px;
+      padding-top: 60px;
+      
+    }
+    #contents h1 {
+      font-size: 50px;
+      padding-bottom: 20px;
+      margin-bottom: 30px;
+    }
+    
+    .container {
+      display: block;
+    }
+    .logo img{
+      height: 150px;
+      width: 150px;
+      border-radius: 50%;
+      display: block;
+      margin: auto;
+    }
+    .profile p {
+      font-size: 24px;
+    }
+    /* スキルのCSS */
+    .table1 td {
+      width: 250px;
+      height: 60px;
+    }
+     .table2 td {
+       width: 500px;
+       height: 60px;
+     }
+     #skill h1 {
+       margin-top: 30px;
+     }
+     .th {
+       font-size: 30px;
+     }
+    /* worksのcss */
+    #works h1 {
+      margin-top: 30px;
+    }
+    #modal {
+      padding: 60px;
+      padding-top: 300px;
+    }
+    
+    .works {
+      height: 300px; 
+    }
+    /* お問い合わせのcss */
+    #contact h1 {
+      margin-top: 30px;
+    }
+    
+    /* footerのcss */
+    footer  {
+      font-size: 14px;
+    }
+    footer p {
+      padding: 0;
+    }
+    
+    .nav2 li {
+      font-size: 20px;
+      margin-right: 40px;
+    }
+  }
+
+
+
+
+/* laptopのｃｓｓ */
+
+
+@media (min-width:1025px) {
+
+  .head2 {
+    display: none;
+  }
+  .head3 {
+    font-family: "Anton", sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 74px;
+    line-height: 90px;
+    margin-top: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: inline-block;
+    z-index: 6;
+    line-height: 90px;
+    font-size: 88px;
+    margin-top: 150px;
+  }
+
+  .bg {
+    height: 500px;
+  }
+  .headercontainer {
+    padding: 80px;
+    padding-top: 5px;
+  }
+  
+  /* navのcss */
+
+  nav a {
+    font-size: 25px;
+  }
+
+  /*自己紹介のcss */
+  
+  #contents h1 {
+    font-size: 75px;
+    letter-spacing: 2px;
+  }
+  .container {
+    display: flex;
+  }
+  .logo {
+    margin:0;
+    width: 50%;
+  }
+  .logo img{
+    display: block;
+    background:#fff;
+    border: 1px solid #fff;;
+    width: 350px;
+    height: 250px;
+    border-radius: 50%;
+  }
+  .profile {
+    text-align: left;
+    margin-left: 0;
+  }
+  
+  /* スキルのCSS */
+  .table {
+  display: flex;
+  justify-content: space-around;
+  font-size: 24px;
+  }
+  .th {
+   font-size: 36px;
+   padding: 20px;
+  }
+  .table1 td {
+    width: 150px;
+    height: 100px;
+  }
+   .table2 td {
+     width: 400px;
+     height: 60px;
+   }
+   /* worksのCSS */
+   #modal {
+     padding-top: 500px;
+     top: 0;
+   }
+   .works {
+     width: 25%;
+  }
+
+
+  /* お問い合わせのcss */
+
+  #contact img {
+    display: block;
+    border: 1px solid pink;
+    width: 300px;
+    height: 200px;
+    border-radius: 50%;
+    margin: auto;
+  }
+  #contact p {
+    padding-bottom: 40px;
+  }
+  /* footerのcss */
+
+  footer p {
+    padding: 20px 0;
+  }
+  
+  .nav2 li {
+    font-size: 20px;
+    margin-right: 80px;
+  }
+}
