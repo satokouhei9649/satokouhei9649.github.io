@@ -241,6 +241,19 @@ a {
     height: 200px;
     padding-top: 25px;
   }
+  .modal_btn {
+    background-color: rgb(0, 153, 255);
+    color: white;
+    border: rgb(2, 111, 184);
+    border-radius: 10%;
+    cursor: pointer;
+  }
+  .git_link:link {
+    color: white;
+  }
+  .git_link:visited {
+    color: white;
+  }
 
 
    /* お問い合わせのcss */
