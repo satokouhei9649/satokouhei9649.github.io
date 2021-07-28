@@ -138,6 +138,9 @@ a {
     font-weight: 10;
     font-size: 15px;
   }
+  .self_intro {
+    line-height: 40px;
+  }
   .container {
     display: flex;
     justify-content: space-between;
