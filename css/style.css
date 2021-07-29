@@ -193,7 +193,7 @@ a {
   .works {
     background-color: white;
     border: 3px solid rgba(224, 224, 224, 0.342);
-    box-shadow: 1px 1px rgba(224, 224, 224, 0.192);
+    box-shadow: 2px 6px rgba(95, 95, 95, 0.89);
     border-radius: 25px;
     height: 200px; 
     width: 30%;
