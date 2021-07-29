@@ -178,9 +178,6 @@ a {
    }
 
    /* worksのcss */
-   #work {
-    z-index: 0;
-   }
    #portfolio {
     display: flex;
     justify-content: space-around;
@@ -194,8 +191,9 @@ a {
     margin-bottom: 20px; 
   }
   .works {
-    border: 3px solid rgb(0, 0, 0);
-    box-shadow: 1px 1px rgb(0, 0, 0);
+    background-color: white;
+    border: 3px solid rgba(224, 224, 224, 0.342);
+    box-shadow: 1px 1px rgba(224, 224, 224, 0.192);
     border-radius: 25px;
     height: 200px; 
     width: 30%;
@@ -497,16 +495,22 @@ a {
    .works {
      width: 25%;
     }
+    #mysite > img {
+      height: 240px;
+    }
     /* モダール */
     #modal {
       padding: 0;
       height: 800px;
       top: 0;
     }
-  .modal_img {
-    width: 80%;
-    height: 400px;
-  }
+    .modal_img {
+      width: 80%;
+      height: 400px;
+    }
+    #mysite > button{
+      margin-top: 15px;
+    }
 
 
   /* お問い合わせのcss */
