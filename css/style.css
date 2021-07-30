@@ -94,22 +94,28 @@ a {
    background: rgb(94, 94, 94);
    height: 45px;
   }
-   nav ul {
+   .nav1 > ul {
+     cursor: pointer;
     margin: 0;
     padding: 0;
   }
   
   nav li {
-    padding: 10px;
+    margin-right: 10px;
+    padding: 8px;
     list-style: none;
     float: left;
     font-size: 16px;
     color:white;
     font-family: "Anton", sans-serif;
+    border-radius: 6px;
+    box-shadow: 3px 3px rgb(61, 61, 61);
+    border: 0.1px solid rgb(61, 61, 61);
   }
   nav a {
     color:white;
     letter-spacing: 3px;
+    cursor: pointer;
   }
   .fas {
     margin-right: 3px;
@@ -315,10 +321,15 @@ a {
     }
     
     /* navのcss */
-    nav {
-      height: auto;
+    .nav1 {
+      height: 50px;
+    }
+    .nav1 > ul {
+      margin: 0 auto;
+      margin-top: 5px;
     }
     .nav1 li {
+      padding: 0;
       margin-right: 10px;
       font-size: 24px;
     }
@@ -442,9 +453,17 @@ a {
   }
   
   /* navのcss */
-
+  .nav1 {
+    height: 60px;
+  }
+.nav1 > ul > li {
+ margin:0 50px;
+ padding: 5px;
+} 
   nav a {
+    display: block;
     font-size: 25px;
+    margin-top: 3px;
   }
 
   /*自己紹介のcss */
