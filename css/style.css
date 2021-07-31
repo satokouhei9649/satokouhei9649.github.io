@@ -25,25 +25,25 @@ a {
   
 }
 .bg1 {
-  background-image: url(../img/bicycle-1872682_1920.jpg);
+  background-image: url(../img/bicycle-1872682_1920.jpg); /* 3888952によるPixabayからの画像 */
   background-size: cover;
   z-index: 4;
   animation: screen 12s infinite;
 }
 .bg2 {
-  background-image: url(../img/books-1163695_1920.jpg);
+  background-image: url(../img/books-1163695_1920.jpg); /* Eli Digital CreativeによるPixabayからの画像 */
   background-size: cover;
   animation: screen 12s infinite 3s;
   z-index: 3;
 }
 .bg3 {
-  background-image: url(../img/camera-1130731_1920.jpg);
+  background-image: url(../img/camera-1130731_1920.jpg); /* Dariusz SankowskiによるPixabayからの画像 */
   background-size: cover;
   animation: screen 12s infinite 6s;
   z-index: 2;
 }
 .bg4 {
-  background-image: url(../img/printing-plate-846089_1920.jpg);
+  background-image: url(../img/printing-plate-846089_1920.jpg);/* Free-PhotosによるPixabayからの画像 */
   background-size: cover;
   animation: screen 12s infinite 9s;
 }
@@ -89,8 +89,8 @@ a {
 
   /* navのcss */
   nav {
-    display: flex;
-    justify-content: center;
+   display: flex;
+   justify-content: center;
    background: rgb(94, 94, 94);
    height: 45px;
   }
@@ -100,7 +100,7 @@ a {
     padding: 0;
   }
   
-  nav li {
+  .nav1 li {
     margin-right: 10px;
     padding: 8px;
     list-style: none;
@@ -288,9 +288,15 @@ a {
   footer p {
     padding: 5px 0;
   }
-  
   .nav2 li {
     font-size: 18px;
+    margin-right: 10px;
+    padding: 8px;
+    list-style: none;
+    float: left;
+    font-size: 16px;
+    color:white;
+    font-family: "Anton", sans-serif;
   }
 
 
@@ -406,6 +412,7 @@ a {
       font-size: 14px;
     }
     footer p {
+      margin-top: 50px;
       padding: 0;
     }
     
