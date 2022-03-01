@@ -224,10 +224,10 @@ a {
     bottom: 0;
     z-index: 1;
   }
-  #modal ,#modal-work1{
+  #modal ,#modal-work1,#modal-work2{
     color: white;
     background: rgba(0, 0, 0, 0.4);
-    height: 450px;
+    height: auto;
     position: fixed;
     top: 100px;
     left: 0;
@@ -255,15 +255,10 @@ a {
     border: rgb(2, 111, 184);
     border-radius: 10%;
     cursor: pointer;
-    margin-top: 30px;
   }
-  .git_link:link {
+  .git_link:link ,.git_link:visited{
     color: white;
   }
-  .git_link:visited {
-    color: white;
-  }
-
 
    /* お問い合わせのcss */
    #contact p {
@@ -345,7 +340,6 @@ a {
     /*自己紹介のcss */
     
     #contents {
-      font-size: 24px;
       padding-top: 60px;
       
     }
@@ -383,6 +377,9 @@ a {
        font-size: 30px;
      }
     /* worksのcss */
+    .github:link,.github:visited {
+      color: black;
+    }
     #works h1 {
       margin-top: 30px;
     }
@@ -527,9 +524,9 @@ a {
       height: 240px;
     }
     /* モダール */
-    #modal,#modal-work1 {
+    #modal,#modal-work1,#modal-work2 {
       padding: 0;
-      height: 800px;
+      height: auto;
       top: 0;
     }
     .modal_img {

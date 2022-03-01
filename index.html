@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="public/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS" crossorigin="anonymous">
     <title>Kouhei Sato's Portfolio</title>
   </head>
 
@@ -43,9 +44,6 @@
 
 
       <main id="contents">
-
-
-
         <section id="profile">
           <h1><i class="fas fa-user "></i> Profile</h1>
             <div  class="container">
@@ -72,9 +70,10 @@
               <table class="table1">
                 <tbody>
                 <tr><td  class="th" colspan="2">独学中のスキル</td></tr>
-                  <tr><td>HTML</td><td>PHP</td></tr>
-                  <tr><td>CSS</td><td>Ruby</td></tr>
+                  <tr><td>HTML</td><td>PHP(Laravel)</td></tr>
+                  <tr><td>CSS</td><td>Ruby(RubyonRails)</td></tr>
                   <tr><td>JavaScript</td><td>MySQL</td></tr>
+                  <tr><td>React</td><td></td></tr>
                 </tbody>
               </table>
   
@@ -84,7 +83,6 @@
                   <tr><td>基本情報技術者</td></tr>
                   <tr><td>LinuC Level１</td></tr>
                   <tr><td>LinuC Level2</td></tr>
-                  <tr><td>情報処理安全確保支援士<br>（＊現在勉強中）</td></tr>
                   <tr><td>AWSクラウドプラクティショナー<br>（＊現在勉強中）</td></tr>
                 </tbody>
               </table>
@@ -94,6 +92,8 @@
 
         <section id="works">
             <h1><i class="fas fa-robot"></i> Works</h1>
+            <p>Git Hub アカウントはこちら</p>
+            <a href="https://github.com/satokouhei9649" class="github"><i class="fa-brands fa-github fa-5x"></i></a>
             <p>自分で作ったものです</p>
             <div id="portfolio">
               <div class="works" id="mysite">
@@ -117,7 +117,7 @@
               <!-- Laravelapp -->
               <div class="works" id="myapp">
                 <img src="public/img/ myapp.jpg">    
-                <button class="modal_btn myapp_btn">詳細</button>         
+                <button class="modal_btn myapp1_btn">詳細</button>         
               </div>
 
               <!-- myapp のモーダル -->
@@ -125,20 +125,30 @@
                 <img class ="modal_img" src="public/img/ myapp.jpg">
                 <figcaption>
                   <p>作ったアプリです</p>
-                  <p>React, Laravel,Docker,AWS</p>
+                  <p>使用技術</p>
+                  <p>React, Laravel,Docker,AWS,HTML,CSS,JavaScript</p>
                 </figcaption>
                 <p><a href="https://github.com/satokouhei9649/Laravel" class="git_link">git hub</a></p>
-                <button class="myapp_back modal_btn">閉じる</button>
+                <button class="myapp1_back modal_btn">閉じる</button>
               </figure>
 
 
-              <!-- <div class="works" id="mysite">
-                <img src="public/img/ myapp.jpg">    
-                <button class="modal_btn">詳細</button>         
-              </div> -->
-              <!-- <div class="work1">              
-                <p><a href="">git hub</a></p>
-              </div> -->
+              <div class="works" id="mysite">
+                <img src="public/img/myapp2.jpg">    
+                <button class="modal_btn myapp2_btn">詳細</button>         
+              </div>
+
+
+              <figure id="modal-work2" class="hidden">
+                <img class ="modal_img" src="public/img/myapp2.jpg">
+                <figcaption>
+                  <p>作ったアプリです</p>
+                  <p>使用技術</p>
+                  <p>Ruby,RubyonRails,HTML,CSS,SQLite</p>
+                </figcaption>
+                <p><a href="https://github.com/satokouhei9649/Rails_App" class="git_link">git hub</a></p>
+                <button class="myapp2_back modal_btn">閉じる</button>
+              </figure>
             </div>
         </section>
 
