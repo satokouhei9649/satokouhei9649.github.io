@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="public/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <title>Kouhei Sato's Portfolio</title>
@@ -50,7 +50,7 @@
           <h1><i class="fas fa-user "></i> Profile</h1>
             <div  class="container">
               <div class="logo">
-                <img src="./img/logo .jpg" alt="自己紹介画像です">
+                <img src="public/img/logo .jpg" alt="自己紹介画像です">
               </div>
               <div class="profile">
                 <p>・名前 ：佐藤  航平</p>
@@ -97,14 +97,15 @@
             <p>自分で作ったものです</p>
             <div id="portfolio">
               <div class="works" id="mysite">
-                <img src="img/mysite.jpg">    
+                <img src="public/img/mysite.jpg">    
                 <button class="modal_btn">詳細</button>         
               </div>
               
               <!-- モーダル -->
               <div id="mask" class="hidden"></div>
+
               <figure id="modal" class="hidden">
-                <img class ="modal_img" src="./img/mysite.jpg">
+                <img class ="modal_img" src="public/img/mysite.jpg">
                 <figcaption>
                   <p>自分のポートフォリオサイトです</p>
                   <p>HTML/CSS/JavaScript</p>
@@ -113,10 +114,28 @@
                 <button id="btn" class="modal_btn">閉じる</button>
               </figure>
 
-
-              <div class="works">              
-                <p><a href="">git hub</a></p>
+              <!-- Laravelapp -->
+              <div class="works" id="myapp">
+                <img src="public/img/ myapp.jpg">    
+                <button class="modal_btn myapp_btn">詳細</button>         
               </div>
+
+              <!-- myapp のモーダル -->
+              <figure id="modal-work1" class="hidden">
+                <img class ="modal_img" src="public/img/ myapp.jpg">
+                <figcaption>
+                  <p>作ったアプリです</p>
+                  <p>React, Laravel,Docker,AWS</p>
+                </figcaption>
+                <p><a href="https://github.com/satokouhei9649/Laravel" class="git_link">git hub</a></p>
+                <button class="myapp_back modal_btn">閉じる</button>
+              </figure>
+
+
+              <!-- <div class="works" id="mysite">
+                <img src="public/img/ myapp.jpg">    
+                <button class="modal_btn">詳細</button>         
+              </div> -->
               <!-- <div class="work1">              
                 <p><a href="">git hub</a></p>
               </div> -->
@@ -128,7 +147,7 @@
         <section id="contact" >
           <div>
             <h1><i class="fas fa-paper-plane"></i> Contact</h1>
-            <a href="https://forms.gle/YNM6F2g7Jpw7Zf9fA"><img src="./img/logo .jpg" alt="画像です"><p>お問い合わせ</p></a>
+            <a href="https://forms.gle/YNM6F2g7Jpw7Zf9fA"><img src="public/img/logo .jpg" alt="画像です"><p>お問い合わせ</p></a>
           </div>
         </section>
 
@@ -145,6 +164,6 @@
         <p>Copyright©️Sato Kouhei. All Right Reserved.  </p>
       </footer>
 
-     <script src="js/main.js"></script>
+     <script src="public/js/main.js"></script>
   </body>
 </html>
