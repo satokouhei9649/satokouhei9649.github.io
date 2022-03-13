@@ -1,6 +1,8 @@
 /* CSS Dcoument */
-
 /* smallscreen */
+.github:link,.github:visited {
+  color: black;
+}
 body {
   margin: 0;
   text-align: center;
@@ -227,9 +229,10 @@ a {
   #modal ,#modal-work1,#modal-work2{
     color: white;
     background: rgba(0, 0, 0, 0.4);
-    height: auto;
+    height: 30%;
+    padding: 40px 0;
     position: fixed;
-    top: 100px;
+    top: 5%;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -377,9 +380,7 @@ a {
        font-size: 30px;
      }
     /* worksのcss */
-    .github:link,.github:visited {
-      color: black;
-    }
+    
     #works h1 {
       margin-top: 30px;
     }
@@ -398,7 +399,7 @@ a {
     .works {
       height: 300px; 
     }
-    #mysite > button {
+    #mysite > button,#myapp > button {
       margin-top: 30px;
     }
     /* お問い合わせのcss */
@@ -522,6 +523,18 @@ a {
     }
     #mysite > img {
       height: 240px;
+    }
+    #modal ,#modal-work1,#modal-work2{
+      color: white;
+      background: rgba(0, 0, 0, 0.4);
+      height: 30%;
+      padding: 40px 0;
+      position: fixed;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      width: 75%;
+      z-index: 2;
     }
     /* モダール */
     #modal,#modal-work1,#modal-work2 {
