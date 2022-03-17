@@ -23,13 +23,10 @@
           <div class="header bg2"></div>
           <div class="header bg3"></div>
           <div class="header bg4"></div>
-        </div>
-          
           <h1 class="head1">Kouhei<br>Sato's<br>Portfolio</h1>
           <h1 class="head2">Kouhei Sato's<br>Portfolio</h1>
           <h1 class="head3">Kouhei Sato's  Portfolio</h1>
-          
-          <!-- <p>IT Engineer</p> -->
+        </div>
       </header>
 
 
@@ -51,15 +48,8 @@
                 <img src="public/img/logo .jpg" alt="自己紹介画像です">
               </div>
               <div class="profile">
-                <p>・名前 ：佐藤  航平</p>
-                <p>・出身 ：神奈川県</p>
-                <p class="self_intro">・自己紹介  ： 初めまして。佐藤 航平と申します<br>ITエンジニアを目指して、独学でプログラミングを勉強中です。将来はセキュリティ面の強いエンジニアになりたいです  最初はプログラミングが苦手でしたが挫けずに  まだまだ足りない所を日々、勉強し頑張りたいと思います</p>
+                <p class="self_intro">はじめまして 平成8年生まれの２５歳 佐藤 航平と申します<br>  ITエンジニアを目指して、独学でプログラミングを勉強中。将来はセキュリティ面の強いエンジニアになりたいです まだまだ足りない所を日々、勉強し頑張りたいと思います（2022年2月更新）</p>
               </div>
-              <!-- <ul class="profile">
-                <li>名前 ：佐藤  航平</li>
-                <li>出身 ：神奈川県</li>
-                <li>自己紹介  ： 初めまして　佐藤　航平と申します</li>
-              </ul> -->
             </div>
         </section>
 
@@ -96,7 +86,9 @@
             <p>自分で作ったものです</p>
             <div id="portfolio">
               <div class="works" id="mysite">
-                <img src="public/img/mysite.jpg">    
+                <img src="public/img/mysite.jpg">   
+                <p>自分のポートフォリオサイトです</p>
+                  <p>HTML / CSS / JavaScript</p> 
                 <button class="modal_btn">詳細</button>         
               </div>
               
@@ -106,16 +98,16 @@
               <figure id="modal" class="hidden">
                 <img class ="modal_img" src="public/img/mysite.jpg">
                 <figcaption>
-                  <p>自分のポートフォリオサイトです</p>
-                  <p>HTML / CSS / JavaScript</p>
+                  <p><a href="https://github.com/satokouhei9649/satokouhei9649.github.io/blob/main/README.md">README.md</a></p>
                 </figcaption>
-                <p><a href="https://github.com/satokouhei9649/satokouhei9649.github.io/blob/main/README.md" class="git_link">README.md</a></p>
                 <button id="btn" class="modal_btn">閉じる</button>
               </figure>
 
               <!-- Laravelapp -->
               <div class="works" id="myapp">
                 <img src="public/img/ myapp.jpg">    
+                <p>作ったアプリです</p>
+                <p>React / Laravel / Docker / AWS / HTML / CSS / JavaScript</p>
                 <button class="modal_btn myapp1_btn">詳細</button>         
               </div>
 
@@ -123,18 +115,19 @@
               <figure id="modal-work1" class="hidden">
                 <img class ="modal_img" src="public/img/ myapp.jpg">
                 <figcaption>
-                  <p>使用技術</p>
-                  <p>React / Laravel / Docker / AWS / HTML / CSS / JavaScript</p>
-                  <p><a href="https://foodloss-myapp.com" class="git_link">https://foodloss-myapp.com
-                  </a></p>
-                  <p><a href="https://github.com/satokouhei9649/Laravel/blob/master/README.md" class="git_link">README.md</a></p>
+                  <p><a href="https://foodloss-myapp.com" class="git_link">https://foodloss-myapp.com</a></p>
+                  <p><a href="https://github.com/satokouhei9649/Laravel/blob/master/README.md">README.md</a></p>
                   <button class="myapp1_back modal_btn">閉じる</button>
                 </figcaption>
               </figure>
+                
+                
 
 
               <div class="works" id="myapp">
                 <img src="public/img/myapp2.jpg">    
+                <p>作ったアプリです</p>
+                <p>Ruby / RubyonRails / HTML / CSS / SQLite</p>
                 <button class="modal_btn myapp2_btn">詳細</button>         
               </div>
 
@@ -142,11 +135,8 @@
               <figure id="modal-work2" class="hidden">
                 <img class ="modal_img" src="public/img/myapp2.jpg">
                 <figcaption>
-                  <p>作ったアプリです</p>
-                  <p>使用技術</p>
-                  <p>Ruby / RubyonRails / HTML / CSS / SQLite</p>
+                  <p><a href="https://github.com/satokouhei9649/Rails_App/blob/master/README.md" >README.md</a></p>
                 </figcaption>
-                <p><a href="https://github.com/satokouhei9649/Rails_App/blob/master/README.md" class="git_link">README.md</a></p>
                 <button class="myapp2_back modal_btn">閉じる</button>
               </figure>
             </div>
@@ -162,15 +152,15 @@
         </section>
 
       </main>
+      <nav class="nav2">
+        <ul>
+          <li><a href="#profile">  Profile</a></li>
+          <li><a href="#skill">  Skill</a></li>
+          <li><a href="#works"> Works</a></li>
+          <li><a href="#contact">  Contact</a></li>
+        </ul>
+      </nav>
       <footer>
-        <nav class="nav2">
-          <ul>
-            <li><a href="#profile">  Profile</a></li>
-            <li><a href="#skill">  Skill</a></li>
-            <li><a href="#works"> Works</a></li>
-            <li><a href="#contact">  Contact</a></li>
-          </ul>
-        </nav>
         <p>Copyright©️Sato Kouhei. All Right Reserved.  </p>
       </footer>
 

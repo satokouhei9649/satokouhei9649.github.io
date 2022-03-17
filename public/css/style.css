@@ -94,11 +94,9 @@ a {
   nav {
    display: flex;
    justify-content: center;
-   background: rgb(94, 94, 94);
-   height: 45px;
+   background: rgba(94, 94, 94, 0.945);
   }
    .nav1 > ul {
-     cursor: pointer;
     margin: 0;
     padding: 0;
   }
@@ -112,10 +110,11 @@ a {
     color:white;
     font-family: "Anton", sans-serif;
     border-radius: 6px;
-    box-shadow: 3px 3px rgb(61, 61, 61);
-    border: 0.1px solid rgb(61, 61, 61);
+    box-shadow: 3px 3px rgb(185, 185, 185);
+    border: 0.1px solid rgba(255, 254, 254, 0.657);
   }
   nav a {
+    display: block;
     color:white;
     letter-spacing: 3px;
     cursor: pointer;
@@ -129,7 +128,7 @@ a {
   #contents {
     text-align: center;
     font-size: 18px;
-    background-color: rgba(230, 230, 230, 0.788);
+    background-color: rgba(248, 248, 248, 0.788);
     padding-top: 1px;
   }
   #contents h1 {
@@ -144,10 +143,10 @@ a {
   }
   .profile p {
     text-align: left;
-    font-weight: 10;
     font-size: 15px;
   }
   .self_intro {
+    font-weight: lighter;
     line-height: 40px;
   }
   .container {
@@ -160,7 +159,7 @@ a {
   .logo img{
     display: block;
     background:#fff;
-    border: 1px solid #fff;;
+    border: 1px solid rgba(156, 156, 156, 0.575);
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -204,16 +203,12 @@ a {
     border: 3px solid rgba(224, 224, 224, 0.342);
     box-shadow: 2px 6px rgba(95, 95, 95, 0.89);
     border-radius: 25px;
-    height: 200px; 
     width: 30%;
   }
   .works > img {
     border-radius: 25px;
     width: 100%;
     height: 150px;
-  }
-  #mysite > button {
-    margin-top: 5px;
   }
 
   /* モーダルのCSS */
@@ -259,8 +254,9 @@ a {
     border-radius: 10%;
     cursor: pointer;
   }
-  .git_link:link ,.git_link:visited{
-    color: white;
+  figcaption > p > a {
+    color: #fff;
+    text-decoration: underline;
   }
 
    /* お問い合わせのcss */
@@ -272,22 +268,22 @@ a {
     display: block;
     width: 100px;
     height: 100px;
+    border: 1px solid rgba(156, 156, 156, 0.575);;
     border-radius: 50%;
     margin: 0 auto;
   }
   
   /* footerのcss */
   footer  {
-    /* height: px; */
-    text-align: center;
     font-size: 6px;
     color: #fff;
-    background: rgb(94, 94, 94);
+    background: rgba(94, 94, 94, 0.945);
     padding-bottom: 30px;
   }
   footer p {
-    padding: 5px 0;
+    margin: 0;
   }
+  
   .nav2 li {
     font-size: 18px;
     margin-right: 10px;
@@ -361,8 +357,9 @@ a {
       border-radius: 50%;
       margin: 30px auto;
     }
+    
     .profile p {
-      font-size: 24px;
+      font-size: 18px;
     }
     /* スキルのCSS */
     .table1 td {
@@ -386,21 +383,11 @@ a {
     }
     #portfolio > div> img {
       width: 100%;
-      height: 200px;
     }
     /* モダール */
-    #modal {
-      height: 550px;
-    }
     .modal_img {
       width: 80%;
       height: 250px;
-    }
-    .works {
-      height: 300px; 
-    }
-    #mysite > button,#myapp > button {
-      margin-top: 30px;
     }
     /* お問い合わせのcss */
     #contact h1 {
@@ -411,11 +398,6 @@ a {
     footer  {
       font-size: 14px;
     }
-    footer p {
-      margin-top: 50px;
-      padding: 0;
-    }
-    
     .nav2 li {
       font-size: 20px;
       margin-right: 40px;
@@ -463,11 +445,12 @@ a {
   .nav1 {
     height: 60px;
   }
-.nav1 > ul > li {
- margin:0 50px;
- padding: 5px;
-} 
-  nav a {
+  .nav1 > ul > li {
+    margin:0 50px;
+    padding: 5px;
+  } 
+  nav > ul > li > a {
+    cursor: pointer;
     display: block;
     font-size: 25px;
     margin-top: 3px;
@@ -481,22 +464,16 @@ a {
   }
   .container {
     display: flex;
-  }
-  .logo {
-    margin:0;
-    width: 50%;
+    justify-content: space-evenly;
+    align-items: center;
   }
   .logo img{
-    display: block;
     background:#fff;
-    border: 1px solid #fff;;
-    width: 350px;
-    height: 250px;
-    border-radius: 50%;
+    width: 200px;
+    height: 200px;
   }
-  .profile {
-    text-align: left;
-    margin-left: 0;
+  .logo,.profile {
+    margin: 0;
   }
   
   /* スキルのCSS */
@@ -521,12 +498,17 @@ a {
    .works {
      width: 25%;
     }
-    #mysite > img {
+    .works > p {
+      width: 80%;
+      font-size: 12px;
+      margin: 0 auto;
+    }
+    .works > img {
       height: 240px;
     }
     #modal ,#modal-work1,#modal-work2{
       color: white;
-      background: rgba(0, 0, 0, 0.4);
+      background: rgba(75, 75, 75, 0.9999999);
       height: 30%;
       padding: 40px 0;
       position: fixed;
@@ -546,11 +528,6 @@ a {
       width: 80%;
       height: 400px;
     }
-    #mysite > button{
-      margin-top: 15px;
-    }
-
-
   /* お問い合わせのcss */
 
   #contact img {
@@ -564,11 +541,6 @@ a {
     padding-bottom: 40px;
   }
   /* footerのcss */
-
-  footer p {
-    padding: 20px 0;
-  }
-  
   .nav2 li {
     font-size: 20px;
     margin-right: 80px;
